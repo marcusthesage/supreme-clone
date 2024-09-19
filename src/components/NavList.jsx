@@ -1,14 +1,16 @@
 import React from 'react';
-
+import '../styles.css'
 const NavList = () => {
-    const items = ['Home', 'About', 'Services', 'Contact'];
+    const items = ['shop', 'about', 'news', 'contact'];
 
     return (
-        <ul className='text-left'>
-            {items.map((item, index) => (
-                <li key={index}>{item}</li>
-            ))}
-        </ul>
+        <div>
+            <ul className='text-left tmargin'>
+                {items.map((item, index) => (
+                     <li key={index} className='margin20'>{item}</li>
+                ))}
+            </ul>
+        </div>
     );
 };
 
